@@ -12,7 +12,7 @@ spec:
   #     - arewetogether.com
   #     secretName: awt-tls
   rules:
-    - host: ticketing.dev
+    - host: capitalcoin.space
       http:
         paths:
           - path: /
