@@ -1,6 +1,6 @@
 var connected = false;
 
-var socket = io("https://ticketing.dev")
+var socket = io("https://capitalcoin.space/")
 socket.emit("setup", userLoggedIn);
 
 socket.on("connected", () => connected = true);
