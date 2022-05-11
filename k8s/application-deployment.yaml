@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: social-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: social
+  template:
+    metadata:
+      labels:
+        app: social
+    spec:
+      containers:
+      - name: social
+        image: joelmukono/socalmonoapp
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: social-service
+spec:
+  selector:
+    app: social
+  ports:
+  - name: social
+    protocol: TCP
+    port: 3003
+    targetPort: 3003

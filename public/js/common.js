@@ -418,7 +418,7 @@ function createPostHtml(postData, largeFont = false) {
     if(isRetweet) {
         retweetText = `<span>
                         <i class='fas fa-retweet'></i>
-                        Retweeted by <a href='/profile/${retweetedBy}'>@${retweetedBy}</a>    
+                        shared by <a href='/profile/${retweetedBy}'>@${retweetedBy}</a>    
                     </span>`
     }
 
@@ -791,7 +791,7 @@ function getNotificationText(notification) {
     var text;
 
     if(notification.notificationType == "retweet") {
-        text = `${userFromName} retweeted one of your posts`;
+        text = `${userFromName} shared one of your posts`;
     }
     else if(notification.notificationType == "postLike") {
         text = `${userFromName} liked one of your posts`;
