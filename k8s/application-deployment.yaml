@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: social
-        image: joelmukono/socalmonoapp:$COMMIT_SHA1
+        image: joelmukono/socalmonoapp
 ---
 apiVersion: v1
 kind: Service
