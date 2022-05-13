@@ -152,6 +152,7 @@ button span {
     border: none;
     resize: none;
     font-size: 19px;
+    white-space: pre-wrap;
 }
 
 #submitPostButton {
